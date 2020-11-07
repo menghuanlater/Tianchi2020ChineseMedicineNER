@@ -4,7 +4,7 @@
 * `初赛`: 0.7680, `排名`：35/1682(*single model*)
 * `复赛`: 0.7128, `排名`: 20/1682(*single model*)
 
-**核心思路**: 利用Machine Reading Comprehension的思路来解决NER问题(思路来源: ACL2020 <A Unified MRC Framework for Named Entity Recognition>)
+**核心思路**: 利用Machine Reading Comprehension的思路来解决NER问题(思路来源: ACL2020 A Unified MRC Framework for Named Entity Recognition)
 
 >> **数据处理**: preprocess.py, 构造(Query, Answer, Context)三元组, 对于较长文本, 采用滑动窗口法处理(等于将长文本拆分成多个短文本, 为了尽可能保持上下文连续性, 后面的每个短文本都会有一部分其前序文本的片段, 具体看构造流程)
 
